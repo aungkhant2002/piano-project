@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-color: #ff6d1a;
+    position: relative;
+}
+
+.show-input {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#cords {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#cords:focus {
+    background-color: green;
+}
+
+.save-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    transform: translateX(10px) scale(0.95);
+}
+
+.replay-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.replay-btn:hover {
+    transform: translateX(10px) scale(0.95);
+}
+
+.show-list {
+    position: absolute;
+    top: 15%;
+    left: 6%;
+}
+
+.show-list li {
+    margin-bottom: 5px;
+}
+
+.board {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+}
+
+.white {
+    position: relative;
+    width: 100px;
+    height: 400px;
+    background-color: #f9eaff;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9), 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+
+.white h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -10%);
+    user-select: none;
+}
+
+.vertical {
+    text-transform: uppercase;
+    position: absolute;
+    left: 68%;
+    bottom: 25%;
+    transform: rotate(270deg);
+    user-select: none;
+}
+
+.white:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9), 3px 1px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.black {
+    width: 60px;
+    height: 200px;
+    background-color: #000000;
+    margin: 0 -30px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9), 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+
+.black:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9), 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
