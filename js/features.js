@@ -36,5 +36,25 @@ function replay(x) {
     console.log(current);
     runMemory(current);
     cords.value = "";
-
 }
+
+document.addEventListener("keyup", function (e) {
+    let current = e.keyCode;
+    if (current == 65) {
+        run('C4');
+    } else if (current == 83) {
+        run('D4')
+    } else if (current == 68) {
+        run('E4')
+    } else if (current == 70) {
+        run('F4')
+    } else if (current == 74) {
+        run('G4')
+    } else if (current == 75) {
+        run('A4')
+    } else if (current == 76) {
+        run('B4')
+    } else if (current == 186) {
+        run('C5')
+    }
+})
